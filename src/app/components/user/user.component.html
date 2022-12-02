@@ -1,0 +1,6 @@
+<div class="container mt-3">
+<div  class="border p-3 fs-5" *ngFor="let user of users">
+  <a class="nav-link" [routerLink]='[user.id]' routerLinkActive="active">{{user.nome}}</a>
+</div>
+</div>
+<router-outlet></router-outlet>
